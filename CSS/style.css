@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,21 +6,21 @@
 
 
 
-.container-footer{
+.container-footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     margin: auto;
     background: radial-gradient(ellipse at top, #ababab 0%, #936af9 100%);
 }
 
-.footer-divider{
+.footer-divider {
     border: none;
     border: 1px solid #fff;
     margin: 10px;
     position: relative;
 }
 
-.footer-content{
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -33,37 +33,38 @@
     animation: animate 1s ease-in-out 0.1s 1 forwards;
 }
 
-.footer-content h4{
+.footer-content h4 {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
-.logo-e-resumo{
+.logo-e-resumo {
     max-width: 250px;
     font-size: 0.9rem;
 }
 
-.institucional{
+.institucional {
     max-width: 250px;
     display: flex;
     flex-direction: column;
 }
 
 .logo-e-resumo p,
-.contato p{
+.contato p {
     color: #fff;
 }
-.nossos-projetos{
+
+.nossos-projetos {
     max-width: 250px;
     display: flex;
     flex-direction: column;
 }
 
 .institucional a,
-.nossos-projetos a{
-    color: rgba(255,255,255,0.85);
+.nossos-projetos a {
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     font-size: 0.92rem;
     margin-bottom: 12px;
@@ -72,17 +73,17 @@
 }
 
 .institucional a:hover,
-.nossos-projetos a:hover{
+.nossos-projetos a:hover {
     color: #936af9;
     transform: translateX(4px);
 }
 
-.contato{
+.contato {
     max-width: 250px;
-    
+
 }
 
-.grid-footer{
+.grid-footer {
     position: relative;
     height: 140px;
     display: flex;
@@ -90,15 +91,13 @@
     justify-content: center;
     overflow: hidden;
     margin-top: 80px;
-    background-image: radial-gradient(
-        rgba(147, 106, 249, 0.9) 2px,
-        transparent 2.1px
-    );
+    background-image: radial-gradient(rgba(255, 255, 255, 0.25) 2px,
+            transparent 2.1px);
     background-size: 10px 10px;
     animation: animate 1s ease-in-out 0.2s 1 forwards;
 }
 
-.nome{
+.nome {
     position: absolute;
     inset: 0;
     display: flex;
@@ -108,27 +107,38 @@
     font-weight: 700;
     margin: 0;
     color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255,255,255,0.6);
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.6);
 }
 
-.footer-bottom{
+.footer-bottom {
     font-size: 0.92rem;
     margin: 10px;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
-    color: rgba(255,255,255,0.85)
-    
+    color: rgba(255, 255, 255, 0.85)
 }
 
 @keyframes animate {
-    from{
+    from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
     }
+}
+
+.pontos-brilho {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(43, 15, 15, 0.25) 2px,
+            transparent 2.1px);
+    background-size: 10px 10px;
+    -webkit-mask-image: radial-gradient(circle 120px at var(--mx, -200px) var(--my, -200px), black 0%, transparent 100%);
+    mask-image: radial-gradient(circle 120px at var(--mx, -200px) var(--my, -200px), black 0%, transparent 100%);
+    
 }
