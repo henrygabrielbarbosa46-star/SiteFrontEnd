@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #25252b;
+    color: #f4f2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.sobre {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    color: #936af9;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    color: #dedbe4;
+    margin-bottom: 16px;
+}
+
+.sessao2 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 1000px;
+}
+
+.card {
+    flex: 1;
+    max-width: 280px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #393940, #554477, #4a4a52, #393940);
+    background-size: 300% 300%;
+    border: 1px solid rgba(147, 106, 249, 0.45);
+    border-radius: 10px;
+    animation: gradiente-card 8s ease infinite;
+    transition: transform 250ms ease, border-color 250ms ease;
+    cursor: pointer;
+}
+
+.card:hover,
+.card:focus-visible {
+    transform: translateY(-5px);
+    border-color: #936af9;
+    outline: none;
+}
+
+@keyframes gradiente-card {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        animation: none;
+        transition: none;
+    }
+
+    .card:hover,
+    .card:focus-visible {
+        transform: none;
+    }
+
+    .card h2,
+    .card p {
+        transition: none;
+    }
+}
+
+.card h2 {
+    color: #b59aff;
+    margin: 0;
+    transition: transform 250ms ease, margin 250ms ease;
+}
+
+.card p {
+    color: #f4f2f7;
+    max-height: 0;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease, margin 300ms ease, opacity 200ms ease;
+}
+
+.card:hover h2,
+.card:focus-visible h2 {
+    transform: translateY(-4px);
+    margin-bottom: 10px;
+}
+
+.card:hover p,
+.card:focus-visible p {
+    max-height: 5rem;
+    margin-top: 4px;
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .card p {
+        max-height: 5rem;
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .sessao2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 24px 16px;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        margin: 24px auto;
+        padding: 16px;
+    }
+
+    .titulo {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .sobre p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    .sessao2 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        margin: 24px 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        padding: 20px 16px;
+    }
+}
