@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seshat Soluções | Front-End, Back-End e UI/UX</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -13,189 +13,220 @@
 
     <header class="header">
         <a href="#home" class="logo">
-            SES<span>HAT</span>
-            <img src="../SiteFrontEnd/Imagens/Placeholder.png" alt="" width="50px">
+            SESHAT <span>SOLUÇÕES</span>
         </a>
         <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Service</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact</a>
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
         </nav>
 
-        <button class="gradient-btn">Contact us</button>
-
+        <a href="#contact" class="gradient-btn">Fale Conosco</a>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
             <h1>Olá, somos a <span>SESHAT</span></h1>
-            <h3> realmente <span>INCRIVEL</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, maiores tenetur nesciunt ipsum deserunt
-                fugit dolorem culpa. Ipsum earum optio magnam, omnis possimus dolorum? Ad repellat quis eaque maiores
-                consectetur?</p>
-            <div class="social-icons">
-                <a href="#">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="#">
-                    <i class="bx bxl-linkedin-square"></i>
-                </a>
-                <a href="#">
-                    <i class="bx bxl-instagram-alt"></i>
+            <h3>Soluções para o seu <span>NEGÓCIO</span></h3>
+            <p>Desenvolvemos soluções completas do Figma ao código: interfaces modernas, front-end responsivo e sistemas
+                integrados.</p>
 
-                </a>
-                <a href="#">
-                    <i class="bx bxl-twitter"></i>
-                </a>
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Contrate</a>
-                <a href="#contact" class="btn">Contato</a>
-
+                <a href="#contact" class="btn">Contrate</a>
+                <a href="#projects" class="btn">Projetos</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="Imagens/Placeholder.png" alt="">
+            <img src="Imagens/Placeholder.png" alt="Seshat Banner">
         </div>
-
     </section>
 
     <section class="about" id="about">
-
         <div class="about-img">
-            <img src="Imagens/Placeholder.png" alt="" srcset="">
+            <img src="Imagens/Placeholder.png" alt="Sobre a Seshat">
         </div>
 
         <div class="about-content">
-            <h2>about <span>us</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla deleniti quibusdam veritatis esse
-                distinctio cum quisquam fugiat perferendis quaerat temporibus, officiis aliquid modi laudantium
-                similique architecto quod numquam est accusantium!</p>
-            <a href="#" class="btn">Read More</a>
+            <h2>Sobre <span>Nós</span></h2>
+            <p>A Seshat Soluções cria arquiteturas digitais completas. Desenvolvemos interfaces intuitivas no Figma e
+                transformamos ideias em código limpo, seguro e escalável.</p>
+            <a href="#services" class="btn">Saiba Mais</a>
         </div>
     </section>
 
+    <section class="team" id="team">
+        <h2 class="heading">Nossa <span>Equipe</span></h2>
+
+        <div class="team-container">
+
+            <div class="team-slider">
+
+                <article class="team-card" style="background-image: url('Imagens/Placeholder.png');">
+                    <div class="card-content">
+                        <h3 class="member-name">Guilherme Bruno</h3>
+                        <p class="member-role">Data Engineer</p>
+                        <a href="integrantes.html/gb.html" class="btn-profile">Ver Perfil</a>
+                    </div>
+                </article>
+
+                <article class="team-card" style="background-image: url('Imagens/Placeholder.png');">
+                    <div class="card-content">
+                        <h3 class="member-name">Henry Gabriel</h3>
+                        <p class="member-role">Estudante de ADS</p>
+                        <a href="integrantes.html/hr.html" class="btn-profile">Ver Perfil</a>
+                    </div>
+                </article>
+
+                <article class="team-card" style="background-image: url('Imagens/Placeholder.png');">
+                    <div class="card-content">
+                        <h3 class="member-name">Pedro Berbem</h3>
+                        <p class="member-role">Estudante de ADS</p>
+                        <a href="integrantes.html/pb.html" class="btn-profile">Ver Perfil</a>
+                    </div>
+                </article>
+
+                <article class="team-card" style="background-image: url('Imagens/Placeholder.png');">
+                    <div class="card-content">
+                        <h3 class="member-name">Renan</h3>
+                        <p class="member-role">Professor de Educação Física</p>
+                        <a href="integrantes.html/renan.html" class="btn-profile">Ver Perfil</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="slider-controls">
+                <button class="prev-btn" type="button" aria-label="Previous">
+                    <i class="bx bx-left-arrow-alt"></i>
+                </button>
+                <button class="next-btn" type="button" aria-label="Next">
+                    <i class="bx bx-right-arrow-alt"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
     <section class="services" id="services">
-
-        <h2 class="heading">Services</h2>
-
+        <h2 class="heading">Nossos <span>Serviços</span></h2>
 
         <div class="services-container">
             <div class="service-box">
                 <div class="service-info">
                     <i class="bx bxl-figma"></i>
                     <h4>UI / UX Design</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, aliquid laboriosam deserunt,
-                        accusamus corrupti cupiditate maxime ut eum, sunt aliquam dicta veniam. Totam in laborum
-                        aspernatur dolorem quis doloribus nemo?</p>
+                    <p>Prototipagem interativa e design de interfaces focados na experiência do usuário.</p>
                 </div>
             </div>
 
-
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-alt"></i>
+                    <h4>Front-end</h4>
+                    <p>Criação de sites e aplicações web responsivas, dinâmicas e de alta performance.</p>
+                </div>
+            </div>
 
             <div class="service-box">
                 <div class="service-info">
                     <i class="bx bx-code-curly"></i>
-                    <h4>Backend</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, aliquid laboriosam deserunt,
-                        accusamus corrupti cupiditate maxime ut eum, sunt aliquam dicta veniam. Totam in laborum
-                        aspernatur dolorem quis doloribus nemo?</p>
+                    <h4>Back-end</h4>
+                    <p>Desenvolvimento de APIs, bancos de dados e regras de negócio robustas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="projects" id="projects">
-
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Nossos <span>Projetos</span></h2>
 
         <div class="projects-box">
-
             <div class="projects-card">
-                <img src="Imagens/Placeholder.png" alt="">
-
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat labore libero totam, explicabo nam
-                    qui veniam aspernatur laborum fugit consequatur ea maxime voluptatum, sapiente illum ipsam natus
-                    vitae officia. Omnis!</p>
-                <div class="btn">Confira o Projeto</div>
+                <img src="Imagens/Placeholder.png" alt="Projeto 1">
+                <h3>Projeto Cliente</h3>
+                <p>Website corporativo responsivo desenvolvido para um de nossos clientes.</p>
+                <a href="#" class="btn">Confira o Projeto</a>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading">Fale <span>Conosco</span></h2>
 
         <form action="#">
-
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="email" placeholder="E-mail" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel" placeholder="Telefone / WhatsApp">
+                    <input type="text" placeholder="Assunto">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="mensagem" placeholder="Sua mensagem..." cols="30" rows="8" required></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
             </div>
         </form>
     </section>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="#">
-                <i class="bx bxl-github"></i>
-            </a>
-            <a href="#">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
-            <a href="#">
-                <i class="bx bxl-instagram-alt"></i>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h4>SESHAT SOLUÇÕES</h4>
+                <p>Projetamos e desenvolvemos ecossistemas digitais completos, do protótipo no Figma ao código final.
+                </p>
+            </div>
 
-            </a>
-            <a href="#">
-                <i class="bx bxl-twitter"></i>
-            </a>
+            <div class="footer-nav">
+                <h4>Institucional</h4>
+                <a href="#home">Início</a>
+                <a href="#about">Sobre nós</a>
+                <a href="#team">Equipe</a>
+                <a href="#services">Serviços</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contato</a>
+            </div>
+
+            <div class="footer-services">
+                <h4>Especialidades</h4>
+                <a href="#services">UI / UX Design</a>
+                <a href="#services">Front-end Web</a>
+                <a href="#services">Back-end APIs</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>contato@gmail.com</p>
+                <p>São Paulo, SP</p>
+            </div>
         </div>
 
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
+        <div class="footer-grid">
+            <div class="glow-dots"></div>
+            <div class="footer-title">SESHAT</div>
+        </div>
 
-            <li>
-                <a href="#services">Services</a>
-            </li>
-
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <p class="copyright">
-            © SESHAT todos diretos reservados
-        </p>
+        <div class="footer-bottom">
+            <p>© 2026 SESHAT SOLUÇÕES. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
     <script src="JS/script.js"></script>
 </body>
 
