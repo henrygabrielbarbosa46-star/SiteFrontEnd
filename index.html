@@ -1,78 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/slider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../SiteFrontEnd/CSS/style.css">
 </head>
-
 <body>
-    <main>
-    <div class="container">
 
-        <div class="slide">
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="../SiteFrontEnd/Imagens/Placeholder.png" alt="" width="50px">
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">RG</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div> 
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
 
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">BANNER</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
+            
 
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">FOOTER</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
+        </nav>
+        <button class="gradient-btn">Contact us</button>
 
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">FORMULARIO</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">FORMULARIO</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(Imagens/teste.jpg);">
-                <div class="content">
-                    <div class="name">FORMULARIO</div>
-                    <div class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-cotent">
+            <h1>texto do <span>BALACOBACO</span></h1>
+            <h3> realmente <span>INCRIVEL</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, maiores tenetur nesciunt ipsum deserunt fugit dolorem culpa. Ipsum earum optio magnam, omnis possimus dolorum? Ad repellat quis eaque maiores consectetur?</p>
+        <div class="social-icons">
+            <a href="#">
+                <i class=""bx bxl-github></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxç-instagram-alt"></i>
+
+            </a>
+            <a href="#">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn">Contrate</a>
+            <a href="#contact" class="btn">Contato</a>
 
         </div>
-
-        <div class="button">
-            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
-    </div>
-    </main>
+        <div class="home-img">
+            <img src="Imagens/Placeholder.png" alt="">
+        </div>
 
-    <script src="JS/slider.js"></script>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="../SiteFrontEnd/Imagens/Placeholder.png" alt="" srcset="">
+        </div>
+        <div class="about-content">
+            <h2>about <span>us</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla deleniti quibusdam veritatis esse distinctio cum quisquam fugiat perferendis quaerat temporibus, officiis aliquid modi laudantium similique architecto quod numquam est accusantium!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    
 </body>
-
 </html>
