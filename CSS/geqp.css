@@ -139,7 +139,7 @@ section {
   margin-top: 1.5rem;
   font-size: clamp(4.5rem, 7vw, 8rem);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .text-animation {

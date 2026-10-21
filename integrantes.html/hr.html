@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/geqp.css">
+  <link rel="stylesheet" href="../CSS/style.css">
   <script src="../JS/geqp.js" defer></script>
 </head>
+
 <body>
 
   <header class="header">
@@ -93,33 +96,27 @@
 
 
     <section class="services" id="services">
-      <h2 class="heading">Serviços</h2>
+      <h2 class="heading">Minhas <span>Habilidades</span></h2>
 
-      <div class="services-container">
-        <article class="service-box">
-          <div class="service-info">
-            <i class="bx bx-code-alt" aria-hidden="true"></i>
-            <h4>Serviço 1</h4>
-            <p>Alore</p>
-          </div>
-        </article>
-
-        <article class="service-box">
-          <div class="service-info">
-            <i class="bx bxs-palette" aria-hidden="true"></i>
-            <h4>Serviço 2</h4>
-            <p>Asasassasa</p>
-          </div>
-        </article>
-
-        <article class="service-box">
-          <div class="service-info">
-            <i class="bx bx-devices" aria-hidden="true"></i>
-            <h4>Serviço 3</h4>
-            <p>sasasasa</p>
-          </div>
-        </article>
+      <div class="logos">
+      <div class="logos-slide">
+        <img src="../logos/aws-svgrepo-com.svg" />
+        <img src="../logos/css3-02-svgrepo-com.svg" />
+        <img src="../logos/html-124-svgrepo-com.svg" />
+        <img src="../logos/js01-svgrepo-com.svg" />
+        <img src="../logos/python-127-svgrepo-com.svg" />
+        <img src="../logos/sql-file-format-svgrepo-com.svg" />
+        <img src="../logos/github-142-svgrepo-com.svg" alt="">
+        
+        <img src="../logos/aws-svgrepo-com.svg" />
+        <img src="../logos/css3-02-svgrepo-com.svg" />
+        <img src="../logos/html-124-svgrepo-com.svg" />
+        <img src="../logos/js01-svgrepo-com.svg" />
+        <img src="../logos/python-127-svgrepo-com.svg" />
+        <img src="../logos/sql-file-format-svgrepo-com.svg" />
+        <img src="../logos/github-142-svgrepo-com.svg" alt="">
       </div>
+    </div>
     </section>
 
     <section class="projects" id="projects">
@@ -196,6 +193,10 @@
 
     <p class="copyright">© <span id="year">2026</span> Guilherme Bruno. Todos os direitos reservados.</p>
   </footer>
-
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
 </body>
+
 </html>
