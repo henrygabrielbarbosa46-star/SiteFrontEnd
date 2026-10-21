@@ -512,7 +512,7 @@ section {
 
 .footer {
   padding: 5rem 2rem;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .footer .social-icons {
