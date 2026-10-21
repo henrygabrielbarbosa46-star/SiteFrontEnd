@@ -357,7 +357,7 @@ section {
 }
 
 .services {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .services-container {
@@ -411,7 +411,7 @@ section {
 }
 
 .projects {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .projects-box {
@@ -455,7 +455,7 @@ section {
 }
 
 .contact {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .contact form {
@@ -615,7 +615,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 6rem 5% 6rem;
 }
 
@@ -932,8 +932,12 @@ section {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
-  background: var(--text-color-light);
+  padding: 35px 0;
+  background: var(20, 20, 26, 0.5);
+  border: 1px solid rgba(147, 106, 249, 0.25);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   white-space: nowrap;
   position: relative;
   display: flex;
@@ -943,7 +947,7 @@ section {
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 180px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -952,12 +956,12 @@ section {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, #080808 0%, transparent 100%);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, #080808 0%, transparent 100%);
 }
 
 .logos:hover .logos-slide {
@@ -967,11 +971,19 @@ section {
 .logos-slide {
   display: flex;
   align-items: center;
-  animation: 15s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 .logos-slide img {
-  height: 50px;
-  margin: 0 40px;
-  flex-shrink: 0
+  height: 48px;
+  margin: 0 35px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1) opacity(0.65);
+  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logos-slide img:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--first-color, #936af9));
 }

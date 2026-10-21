@@ -1,3 +1,4 @@
+//Menu
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let navLinks = document.querySelectorAll('header nav a');
@@ -56,15 +57,47 @@ if (footerGrid) {
 const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
 const teamSlider = document.querySelector('.team-slider');
+const teamContainer = document.querySelector('.team-container');
 
 if (nextBtn && prevBtn && teamSlider) {
-    nextBtn.addEventListener('click', () => {
+    // Funções de navegação do slider
+    const nextSlide = () => {
         const items = document.querySelectorAll('.team-card');
-        teamSlider.appendChild(items[0]);
-    });
+        if (items.length > 0) {
+            teamSlider.appendChild(items[0]);
+        }
+    };
 
-    prevBtn.addEventListener('click', () => {
+    const prevSlide = () => {
         const items = document.querySelectorAll('.team-card');
-        teamSlider.prepend(items[items.length - 1]);
-    });
+        if (items.length > 0) {
+            teamSlider.prepend(items[items.length - 1]);
+        }
+    };
+
+    // Eventos de clique nos botões
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Gestos de toque / arraste no celular
+    if (teamContainer) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const minSwipeDistance = 40;
+
+        teamContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        teamContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            const swipeDistance = touchStartX - touchEndX;
+
+            if (swipeDistance > minSwipeDistance) {
+                nextSlide(); // Arrastou para a esquerda
+            } else if (swipeDistance < -minSwipeDistance) {
+                prevSlide(); // Arrastou para a direita
+            }
+        }, { passive: true });
+    }
 }
