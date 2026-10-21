@@ -294,7 +294,7 @@ section {
 
 .mini-card p {
     color: var(--text-color);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.35;
     max-height: 0;
     opacity: 0;
@@ -918,4 +918,60 @@ section {
         width: 100%;
         text-align: center;
     }
+}
+
+/*slider skills*/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: var(--text-color-light);
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: flex;
+  align-items: center;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  flex-shrink: 0
 }
