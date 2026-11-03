@@ -682,6 +682,27 @@ section {
   .footer-title {
     font-size: 16vw;
   }
+
+  /* Move a linha guia vertical para a esquerda */
+  .timeline-items::before {
+    left: 20px;
+  }
+
+  /* Faz os cards ocuparem a largura total da tela */
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 3rem 50px; /* Recuo para não sobrepor a linha */
+    text-align: left;
+  }
+
+  /* Reposiciona a bolinha indicadora sobre a linha na esquerda */
+  .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 12px;
+    right: auto;
 }
 
 /* 3. CELULARES MUITO PEQUENOS (Até 480px) */
